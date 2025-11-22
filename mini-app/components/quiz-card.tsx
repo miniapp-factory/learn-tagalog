@@ -18,6 +18,7 @@ const cards: Card[] = [
 export default function QuizCard() {
   const [index, setIndex] = useState(0);
   const [showEnglishFront, setShowEnglishFront] = useState(true);
+  const [flipped, setFlipped] = useState(false);
   const [answer, setAnswer] = useState("");
   const [lives, setLives] = useState(3);
   const [correct, setCorrect] = useState(false);
@@ -46,12 +47,15 @@ export default function QuizCard() {
   };
 
   const cardClass = `relative w-48 h-48 rounded-xl shadow-lg flex items-center justify-center cursor-pointer transition-transform duration-700 ${
-    correct ? "border-4 border-green-500" : ""
-  }`;
+    flipped ? "rotate-y-180" : ""
+  } ${correct ? "border-4 border-green-500" : ""}`;
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className={cardClass} onClick={() => setShowEnglishFront((prev) => !prev)}>
+      <div className={cardClass} onClick={() => {
+        setFlipped(true);
+        handleSubmit();
+      }}>
         <div className="absolute w-full h-full backface-hidden flex items-center justify-center text-5xl font-bold">
           {displayedFront}
         </div>
