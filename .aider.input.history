@@ -28,3 +28,15 @@
 +Salamat shows on one side of card
 +
 +When you flip it, don’t show Salamat backyards, you should translate it and show Thank you, on the other side of the card. Do this for common words. They need to type answer in somewhere, then flip card to see if they get it right.  If wrong they lose a life (of 3 total). If right highlight it green for a second and move to next question  
+
+# 2025-11-22 15:57:32.195704
++Remove the emoji on the card as it doesn’t make sense. Show English on card, user types correct translation to get it . If they flip that card it shows answer and auto checks what they types.
++
++
++You can also show Tagalog on card , then make user enter Tagalog translation . 
+
+# 2025-11-22 15:57:32.196098
++Remove the emoji on the card as it doesn’t make sense. Show English on card, user types correct translation to get it . If they flip that card it shows answer and auto checks what they types.
++
++
++You can also show Tagalog on card , then make user enter Tagalog translation . 
