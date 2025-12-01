@@ -23,13 +23,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <MiniAppProvider>
-          <div className="font-sans min-h-screen flex flex-col place-content-between gap-2">
-            <Header />
-            {children}
-            <Footer />
+        <div className="flex flex-col min-h-screen bg-gradient-to-b from-orange-500 via-yellow-500 to-red-500 text-white">
+          {/* Header with hearts, streak, XP */}
+          <div className="flex justify-between items-center p-4">
+            <div className="flex items-center gap-1">
+              <span className="text-2xl">❤️❤️❤️❤️❤️</span>
+              <span className="text-sm">Streak: 7</span>
+            </div>
+            <div className="text-sm">XP: 1234</div>
           </div>
-        </MiniAppProvider>
+
+          <MiniAppProvider>
+            <div className="font-sans min-h-screen flex flex-col place-content-between gap-2">
+              <Header />
+              {children}
+              <Footer />
+            </div>
+          </MiniAppProvider>
+        </div>
       </body>
     </html>
   );
