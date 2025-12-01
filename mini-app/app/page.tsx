@@ -1,5 +1,6 @@
-import { description, title } from "@/lib/metadata";
+import { description, title, url } from "@/lib/metadata";
 import { generateMetadata } from "@/lib/farcaster-embed";
+import { Share } from "@/components/share";
 
 export { generateMetadata };
 
