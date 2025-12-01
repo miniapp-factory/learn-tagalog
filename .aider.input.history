@@ -1,0 +1,70 @@
+
+# 2025-12-01 07:30:30.583025
++Code the following app
++```
++A beautiful and fun Duolingo-style language learning mini-app called “Learn Tagalog” that teaches real everyday Tagalog and Bisaya (Cebuano) to English speakers.
++
++On first visit the user chooses either “Tagalog” or “Bisaya” — the entire app (lessons, voice, UI) instantly switches to that language and remembers forever.
++
++The home page shows a short daily lesson (5–10 minutes max) with these question types that appear one after another:
++- Translate the sentence (English ↔ Filipino)
++- Multiple choice
++- Tap the picture that matches the word shown
++- Flip-card: tap a card with a photo → it flips to reveal the Tagalog/Bisaya word
++- Speak the sentence (uses Web Speech API)
++- Type what you hear
++- Fill in the blank
++
++Use only real-life conversational sentences (greetings, food, jeepney, market, family, flirting, directions, etc.).
++
++Background is a smooth Philippine flag gradient: orange → yellow → red. Buttons are bright blue and white. Title is “Learn Tagalog” with a big Philippine flag emoji.
++
++On the title/home screen, generate and display a majestic Philippine eagle mascot using Stable Diffusion with this exact prompt:  
++“majestic Philippine eagle, powerful and proud, piercing golden eyes, dramatic lighting, subtle Philippine flag colors in feathers, ultra-realistic cinematic style, extreme detail, patriotic and inspiring, 8k”  
++→ save as eagle.png and show large on the home screen.
++
++5-heart system, daily streak, and XP counter at the top. When lesson finishes → fireworks + confetti + “Share on Farcaster/X” button.
++
++All progress, chosen language, and streak saved to /var/lib/mini-app/progress.json (add StateDirectory = "mini-app"; in the NixOS module).
++
++Everything in pure HTML + CSS + vanilla JavaScript only. Place the entire learning experience directly on the home page.
++
++Mabuhay!
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-12-01 07:30:30.583538
++Code the following app
++```
++A beautiful and fun Duolingo-style language learning mini-app called “Learn Tagalog” that teaches real everyday Tagalog and Bisaya (Cebuano) to English speakers.
++
++On first visit the user chooses either “Tagalog” or “Bisaya” — the entire app (lessons, voice, UI) instantly switches to that language and remembers forever.
++
++The home page shows a short daily lesson (5–10 minutes max) with these question types that appear one after another:
++- Translate the sentence (English ↔ Filipino)
++- Multiple choice
++- Tap the picture that matches the word shown
++- Flip-card: tap a card with a photo → it flips to reveal the Tagalog/Bisaya word
++- Speak the sentence (uses Web Speech API)
++- Type what you hear
++- Fill in the blank
++
++Use only real-life conversational sentences (greetings, food, jeepney, market, family, flirting, directions, etc.).
++
++Background is a smooth Philippine flag gradient: orange → yellow → red. Buttons are bright blue and white. Title is “Learn Tagalog” with a big Philippine flag emoji.
++
++On the title/home screen, generate and display a majestic Philippine eagle mascot using Stable Diffusion with this exact prompt:  
++“majestic Philippine eagle, powerful and proud, piercing golden eyes, dramatic lighting, subtle Philippine flag colors in feathers, ultra-realistic cinematic style, extreme detail, patriotic and inspiring, 8k”  
++→ save as eagle.png and show large on the home screen.
++
++5-heart system, daily streak, and XP counter at the top. When lesson finishes → fireworks + confetti + “Share on Farcaster/X” button.
++
++All progress, chosen language, and streak saved to /var/lib/mini-app/progress.json (add StateDirectory = "mini-app"; in the NixOS module).
++
++Everything in pure HTML + CSS + vanilla JavaScript only. Place the entire learning experience directly on the home page.
++
++Mabuhay!
++```
++
++Generate an app logo and update the app metadata title and description.
