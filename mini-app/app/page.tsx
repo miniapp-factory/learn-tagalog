@@ -1,18 +1,25 @@
 import { description, title, url } from "@/lib/metadata";
 import { generateMetadata } from "@/lib/farcaster-embed";
 import { Share } from "@/components/share";
+import { useState, useEffect } from "react";
+import Lesson from "@/components/lesson";
 
 export { generateMetadata };
 
 export default function Home() {
   // NEVER write anything here, only use this page to import components
+  const [streak, setStreak] = useState(0);
+  useEffect(() => {
+    const stored = localStorage.getItem("streak");
+    if (stored) setStreak(parseInt(stored));
+  }, []);
   return (
     <main className="flex flex-col min-h-screen bg-gradient-to-b from-orange-500 via-yellow-500 to-red-500 text-white">
       {/* Header with hearts, streak, XP */}
       <div className="flex justify-between items-center p-4">
         <div className="flex items-center gap-1">
           <span className="text-2xl">❤️❤️❤️❤️❤️</span>
-          <span className="text-sm">Streak: 7</span>
+          <span className="text-sm">Streak: {streak}</span>
         </div>
         <div className="text-sm">XP: 1234</div>
       </div>
@@ -30,7 +37,7 @@ export default function Home() {
 
       {/* Lesson container (placeholder) */}
       <div className="flex flex-col items-center gap-4 mt-8">
-        <p className="text-xl">Daily lesson will appear here.</p>
+        <Lesson />
         {/* Add lesson components here */}
       </div>
 
