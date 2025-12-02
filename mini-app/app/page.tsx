@@ -1,4 +1,4 @@
-use client;
+"use client";
 import { description, title, url } from "@/lib/metadata";
 import { generateMetadata } from "@/lib/farcaster-embed";
 import { Share } from "@/components/share";
